@@ -118,17 +118,21 @@ if(!$user){
 					To stop this, remove this application in facebok "Account" => "Privacy Settings" => "Apps and Websites"
 				</p>
 			<?php } else { ?>
-
-
 				<p>
 					<strong><a href="<?php echo $loginUrl; ?>" target="_top">Allow this app to interact with my profile</a></strong>
 				</p>
 				<p>
-					You are not authorised at moment. 
+					This is just a simple app for demonstrating offline_access permission. After allowing this application, it will start 
+					posting messages on your wall. To stop it, remove your permissions for this application. 
+				</p>
+				<p>
+					It will send time and date after every 5 minutes on your wall. Something like <br />
+					date: 2011-06-24 time: 10:55<br />
+					date: 2011-06-24 time: 11:00<br />
 				</p>
 			<?php } ?>
 			<p>
-				<a href="http://eagerfish.eu/"><strong>Download source and read blogpost about this</strong></a>
+				<a href="http://eagerfish.eu/example-of-facebook-app-which-uses-offline-access-permission"><strong>Download source and read blogpost about this</strong></a>
 			</p>
 			
 	</body>
