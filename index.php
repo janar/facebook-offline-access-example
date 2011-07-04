@@ -79,13 +79,12 @@ if($user){
 				`id` = " . $row['id'] . "
 		");
 	}
-	
-	//redirect to facebook page
-	if(isset($_GET['code'])){
-		header("Location: " . $fb_app_url);
-		exit;
-	}
-	
+}
+
+//redirect to facebook page
+if(isset($_GET['code'])){
+	header("Location: " . $fb_app_url);
+	exit;
 }
 
 //create authorising url
