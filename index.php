@@ -131,7 +131,7 @@ if(!$user){
 				</p>
 			<?php } ?>
 			<p>
-				<a href="http://eagerfish.eu/example-of-facebook-app-which-uses-offline-access-permission"><strong>Download source and read blogpost about this</strong></a>
+				<a href="http://eagerfish.eu/example-of-facebook-app-which-uses-offline-access-permission" target="_blank"><strong>Download source and read blogpost about this</strong></a>
 			</p>
 			
 	</body>
