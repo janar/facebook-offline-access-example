@@ -1,1 +1,23 @@
-Initial contents
+This works with PHP SDK (v.3.0.0) at moment.
+
+Read blogpost about it @ http://eagerfish.eu/example-of-facebook-app-which-uses-offline-access-permission/
+
+Check it out @ http://apps.facebook.com/offline-access-dmo/
+
+SETUP NOTES:
+1. Download latest 'facebook.php' (php-sdk) from github and place it next to index.php. 
+url: https://github.com/facebook/php-sdk/blob/master/src/facebook.php
+
+2. Setup your app in facebook as iframe app
+
+3. Fill in config.php which variables should be pretty much self explanatory. Values can be found here after clicking on your app.
+
+4. Create fallowing table if your mysql user has not CREATE permission. Otherwise index.php script creates itself at moment. 
+
+CREATE TABLE IF NOT EXISTS `offline_access_users` (
+		`id` int(11) NOT NULL AUTO_INCREMENT,
+		`user_id` varchar(32) NOT NULL,
+		`name` varchar(32) NOT NULL,
+		`access_token` varchar(255) NOT NULL,
+		PRIMARY KEY (`id`)
+		) ENGINE=MyISAM DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
